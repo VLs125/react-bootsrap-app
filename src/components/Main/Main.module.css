@@ -1,0 +1,8 @@
+.content{
+    grid-area: middle;
+    flex-direction: row;
+    background: lightgray;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
