@@ -1,28 +1,19 @@
 import React from 'react'
-import Button from "react-bootstrap/Button";
-import Nav from "react-bootstrap/Nav";
-import Form from 'react-bootstrap/Form'
-import FormControl from 'react-bootstrap/FormControl'
-import Navbar from "react-bootstrap/Navbar";
-import header from './Header.module.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-const Header = () =>{
-    return( <div className={header.stage}>
-        <Navbar bg="dark" variant="dark">
-                <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-                <Nav className="mr-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#features">Features</Nav.Link>
-                    <Nav.Link href="#pricing">Pricing</Nav.Link>
-                </Nav>
-                <Form inline>
-                    <FormControl type="text" placeholder="Search" className="mr-2" />
-                    <Button  variant="outline-info">Search</Button>
-                </Form>
-            </Navbar>
-    </div>
+import 'antd/dist/antd.css';
+import { Menu } from 'antd';
+import {Layout} from 'antd'
+const {  Header } = Layout;
+const Top = () =>{
+    return(
+        <Header>
+            <div className="logo" />
+            <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
+                <Menu.Item key="1">nav 1</Menu.Item>
+                <Menu.Item key="2">nav 2</Menu.Item>
+                <Menu.Item key="3">nav 3</Menu.Item>
+            </Menu>
+        </Header>
 
     )
 }
-export default Header;
+export default Top;

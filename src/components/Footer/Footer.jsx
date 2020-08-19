@@ -1,8 +1,8 @@
 import React from "react";
-import footer from './Footer.module.css'
-
-const Footer = () =>{
-    return(  <footer className={footer.footer}>Footer</footer>)
+import {Layout} from "antd";
+const {Footer} = Layout
+const Bottom  = () =>{
+    return(   <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>)
 }
 
-export default Footer;
+export default Bottom;
